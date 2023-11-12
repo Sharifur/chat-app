@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import  Input  from "@/components/ui/input";
 import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { Label } from "@/components/ui/label";
@@ -52,13 +52,13 @@ const AuthForm = () => {
                 onSubmit={handleSubmit(onSubmit)}
                 >
                 <div className="grid w-full max-w-sm items-center gap-1.5">
-                <Label htmlFor="email">Email</Label>
-                {/* <Input
+                <Input
                 type="email"
                 id="email"
                 placeholder="Email"
                 register={register}
-                /> */}
+                label='Email'
+                />
                 </div>
                 <Button size={"sm"}>
                     test button
